@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bike-primary':'#E76F51',
+            'bike-primary-bg': 'rgba(231, 111, 81, 0.10)',
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .font-family{ font-family: 'Manrope', sans-serif;}
+</style>
+
+</head>
+<body>
+    <header class="lg:container lg:max-auto">
+                     <!--nav bar-->
+        <nav>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <div class="text-gray-500 font-bold ">
+                    <li class="text-red-500"><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Page</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li></div>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl font-bold gap-0">Hockey<p class="text-red-500">’</p>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 font-bold text-gray-500">
+                <li class="text-red-500"><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Page</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-red-500 text-white w-32 h-10">Get Ticket</a>
+            </div>
+          </div>
+          <section>
+               <!--slides-->
+               <div class="carousel w-full relative
+                lg:carousel w-full p-15 relative ">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div class="w-80 h-20 bg-slate-950 absolute top-9
+                 lg:w-1/2 h-44 bg-slate-950 absolute bottom-20 top-30 right-2 rounded-2xl" >
+                  <h2 class="font-bold text-white p-3 lg:p-6 ">Meet all the heroes from the field</h2>
+                  <p class="text-gray-500 p-2 lg:p-3">Take inspiration from over 5,000 players, use ready-made session plans from our pro coaches or plan your own, and use advice from the community to become a more confident coach.</p>
+                </div>
+              </div>
+
+            </nav>
+          </section>
+    </header>
+                      <!--percentage-->
+    <section>
+       <div class="text-center my-28">
+       <h1 class="font-bold text-3xl">Professional Hockeys Club</h1>
+       <p class="text-gray-500">Prime Hockey is a proud certified partner of PEP Hockey Training. <br> We offer PEP training sessions across the Twin Cities metro area year round.</p>
+       </div>
+</section>
+                      <!-- progress-->
+
+       <section class="text-center space-x-14 flex-col px-9 md:flex-row 
+       lg:flex flex-row gap-16">
+<div>           
+<div class="radial-progress text-red-500 ml-14" style="--value:87;"><span class="text-black font-bold">87%</span>
+</div>
+<h2 class="font-bold">Prayer Facility</h2>
+<p class="text-gray-500">We are proud to offer a dedicated prayer facility, providing a serene and inclusive space for reflection and prayer.</p></div>
+ <div>
+<div class="radial-progress text-green-500" style="--value:95;"><span class="text-black font-bold">95%</span>
+</div>
+<h2 class="font-bold">Experienced Coach</h2>
+<p class="text-gray-500">Dedicated professional with a passion for transforming players into elite athletes.</p>
+</div>
+<div>
+<div class="radial-progress text-yellow-500" style="--value:80;"><span class="text-black font-bold">90%</span>
+</div>
+<h2 class="font-bold">Senior Player</h2>
+<p class="text-gray-500"> serves as a mentor and inspiration to aspiring athletes, sharing invaluable insights gained from years of elite-level competition.</p>
+</div>
+<div>
+<div class="radial-progress text-blue-500" style="--value:80;"><span class="text-black font-bold">90%</span>
+</div>
+<h2 class="font-bold">Training Ground</h2>
+<p class="text-gray-500"> Our facility includes specialized training zones for on-ice drills, off-ice conditioning, and tactical strategy sessions. 
+  
+</p>
+</div>
+</section>
+  <section>
+        <div class="text-center my-28">
+        <h1 class="font-bold text-3xl">Program Sections</h1>
+        <p class="text-gray-500"> Join us at and choose the program that aligns with your aspirations. </p>
+        </div>
+ </section>
+                        <!--products section-->
+      <div>
+       <h1 class="text-center font-bold text-3xl">Our New Products</h1>
+       <p class="text-center text-gray-500">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
+                          <!-- cards-->
+<main>
+
+<section class=" md:grid-cols-2 lg:grid grid-cols-2">
+ 
+  <div class="
+  lg:w-4/5 h-52 border-2 mt-8 m-8 rounded-2xl flex flex-row
+  md:w-2/6 h-52 border-2 mt-8 m-8 rounded-2xl flex-row">
+     <div><img class="p-4" src="images/5.png" alt="" /></div>
+     <div class="m-3">
+        <h2 class="card-title text-xl">World Cup Flags Football</h2>
+        <p class=" text-gray-500">Premium Jacket At Reasonable price</p>
+        <p class=" text-gray-500">Price -$22.00</p>
+         <p class=" text-gray-500">Delivery Fee:Free</p></div>
+        </div>
+      
+      <div class="lg:w-4/5 h-52 border-2 mt-8 m-8 rounded-2xl flex flex-row
+      md:w-2/6 h-52 border-2 mt-8 m-8 rounded-2xl flex flex-row">
+        <div><img class="p-4" src="images/6.png" alt="" /></div>
+        <div class="m-3">
+           <h2 class="card-title text-xl">World Cup Flags Football</h2>
+           <p class=" text-gray-500">Premium Jacket At Reasonable price</p>
+           <p class=" text-gray-500">Price -$22.00</p>
+            <p class=" text-gray-500">Delivery Fee:Free</p></div>
+           </div>
+         </div>
+         <div class="lg:w-4/5 h-52 border-2 mt-8 m-8 rounded-2xl flex flex-row
+         md:w-2/6 h-52 border-2 mt-8 m-8 rounded-2xl flex flex-row">
+          <div><img class="p-4" src="images/7.png" alt="" /></div>
+          <div class="m-3">
+             <h2 class="card-title text-xl">World Cup Flags Football</h2>
+             <p class=" text-gray-500">Premium Jacket At Reasonable price</p>
+             <p class=" text-gray-500">Price -$22.00</p>
+              <p class=" text-gray-500">Delivery Fee:Free</p></div>
+             </div>
+           </div></div>
+           <div>
+  <div class="lg:w-4/5 h-52 border-2 mt-8 m-8 rounded-2xl flex flex-row
+  md:w-2/6 h-52 border-2 mt-8 m-8 rounded-2xl flex flex-row">
+    <div><img class="p-4" src="images/8.png" alt="" /></div>
+    <div class="m-3">
+       <h2 class="card-title text-xl">World Cup Flags Football</h2>
+       <p class=" text-gray-500">Premium Jacket At Reasonable price</p>
+       <p class=" text-gray-500">Price -$22.00</p>
+        <p class=" text-gray-500">Delivery Fee:Free</p></div>
+       </div>
+     </div>
+     <div class="
+     lg:w-4/5 h-52 border-2 mt-8 m-8 rounded-2xl flex flex-row
+     md:w-2/6 h-52 border-2 mt-8 m-8 rounded-2xl flex flex-row">
+       <div><img class="p-4" src="images/9.png" alt="" /></div>
+       <div class="m-3">
+          <h2 class="card-title text-xl">World Cup Flags Football</h2>
+          <p class=" text-gray-500">Premium Jacket At Reasonable price</p>
+          <p class=" text-gray-500">Price -$22.00</p>
+           <p class=" text-gray-500">Delivery Fee:Free</p></div>
+          </div>
+        </div>
+        <div class="lg:w-4/5 h-52 border-2 mt-8 m-8 rounded-2xl flex flex-row
+        md:w-2/6 h-52 border-2 mt-8 m-8 rounded-2xl flex flex-row">
+         <div><img class="p-4" src="images/10.png" alt="" /></div>
+         <div class="m-3">
+            <h2 class="card-title text-xl">World Cup Flags Football</h2>
+            <p class=" text-gray-500">Premium Jacket At Reasonable price</p>
+            <p class=" text-gray-500">Price -$22.00</p>
+             <p class=" text-gray-500">Delivery Fee:Free</p></div>
+            </div>
+          </div></div>
+          <!-- q/A-->
+</div>
+  </div>
+</section>
+</main>
+<section class="flex-col md:flex-row lg:flex flex-row">
+  <div class="ml-8 w-96 h-1/2">
+    <img src="Images/11.png" alt="">
+  </div>
+  <div class="w-96 h-1/2 ml-14  border-2 mt-8 md:mt-0 lg:mt-0">
+    <h1 class="font-bold text-xl">Our Equipment</h1>
+    <p class="text-gray-500">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+    <div class="collapse collapse-plus">
+      <input type="radio" name="my-accordion-3" checked="checked" /> 
+      <div class="collapse-title text-xl font-medium">
+        Hockey Training
+      </div>
+      <div class="collapse-content"> 
+        <p></p>
+      </div>
+    </div>
+    <div class="collapse collapse-plus">
+      <input type="radio" name="my-accordion-3" /> 
+      <div class="collapse-title text-xl font-medium">
+        Private Lessons
+      </div>
+      <div class="collapse-content"> 
+        <p>hello</p>
+      </div>
+    </div>
+    <div class="collapse collapse-plus">
+      <input type="radio" name="my-accordion-3" /> 
+      <div class="collapse-title text-xl font-medium">
+        Ski Touring
+      </div>
+      <div class="collapse-content"> 
+        <p>hello</p>
+      </div>
+    </div>
+    <div class="collapse collapse-plus">
+      <input type="radio" name="my-accordion-3" /> 
+      <div class="collapse-title text-xl font-medium">
+        Booking
+      </div>
+      <div class="collapse-content"> 
+        <p>hello</p>
+      </div>
+      <div class="collapse collapse-plus">
+        <input type="radio" name="my-accordion-3" /> 
+        <div class="collapse-title text-xl font-medium">
+          Pricings
+        </div>
+        <div class="collapse-content"> 
+          <p>hello</p>
+        </div>
+  </div>
+</section>
+    <footer>
+
+    </footer>
+</body>
+</ht-ml>
