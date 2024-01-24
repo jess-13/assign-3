@@ -93,13 +93,17 @@
                     <a href="#slide1" class="btn btn-circle">❯</a>
                   </div>
                 </div>
-                <div class="w-80 h-20 bg-slate-950 absolute top-9
+                <div class="md:w-1/2 h-44 bg-slate-950 absolute bottom-20 top-30 right-2 rounded-2xl
                  lg:w-1/2 h-44 bg-slate-950 absolute bottom-20 top-30 right-2 rounded-2xl" >
                   <h2 class="font-bold text-white p-3 lg:p-6 ">Meet all the heroes from the field</h2>
                   <p class="text-gray-500 p-2 lg:p-3">Take inspiration from over 5,000 players, use ready-made session plans from our pro coaches or plan your own, and use advice from the community to become a more confident coach.</p>
                 </div>
               </div>
-
+              <div class="w-auto h-72 bg-slate-950 rounded-xl p-8 md:display-hidden
+              lg:hidden" >
+               <h2 class="font-bold text-white p-3 lg:p-6 ">Meet all the heroes from the field</h2>
+               <p class="text-gray-500 p-2 lg:p-3">Take inspiration from over 5,000 players, use ready-made session plans from our pro coaches or plan your own, and use advice from the community to become a more confident coach.</p>
+             </div>
             </nav>
           </section>
     </header>
@@ -228,7 +232,7 @@
   <div class="w-96 h-1/2">
     <img src="Images/11.png" alt="">
   </div>
-  <div class="w-96 h-1/2 border-2 mt-8 md:mt-0 lg:mt-0">
+  <div class="w-96 h-1/2 border-2 mt-8 md:mt-0 lg:mt-0 ml-8">
     <h1 class="font-bold text-xl">Our Equipment</h1>
     <p class="text-gray-500">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
     <div class="collapse collapse-plus">
@@ -278,8 +282,9 @@
   </section>
   
     <h1 class="font-bold text-center text-3xl mt-8">Get In Touch</h1>
-  <p class="text-gray-500 text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>  
-<section>
+  <p class="text-gray-500 text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+  
+<section class="flex-col md:flex-row lg:flex flex-row">
   <div class="mt-8 ">
  <div class="w-96 h-56 bg-orange-100 rounded-2xl">
   <img class="p-6" src="Images/Group 1171275317.png" alt="">
@@ -300,21 +305,88 @@
      <span class="text-black font-bold">152/1 Mohakhali Wireless Gate</span></p>
   </div>
   </div>
-  
-  <div>
+
+ <div>
+  <div class="md:flex flex-row gap-16 lg:flex flex-row">
  <form class="mt-8">
   <label class="font-bold" for="username">Your Name:</label><br>
-  <input class="w-80 h-16 bg-red-50 text-gray-500 rounded-xl m-" type="text" id="username" value="username">
+  <input class="w-80 h-16 bg-red-50 text-gray-500 rounded-xl p-6" type="text" id="username" value="Enter your full name">
   </form>
  
   <form class="mt-8">
-    <label class="font-bold" for="username">Your Name:</label><br>
-    <input class="w-80 h-16 bg-red-50 text-gray-500 rounded-xl m-" type="text" id="username" value="username">
+    <label class="font-bold">Subject</label><br>
+    <input class="w-80 h-16 bg-red-50 text-gray-500 rounded-xl p-6" type="text" value="Enter your subject">
     </form>
   </div>
+  <div class="md:flex flex-row gap-16 lg:flex flex-row">
+    <form class="mt-8">
+      <label class="font-bold">Your Email</label><br>
+      <input class="w-80 h-16 bg-red-50 text-gray-500 rounded-xl p-6" type="text" value="Enter your email">
+      </form>
+     
+      <form class="mt-8">
+        <label class="font-bold">Phone Number</label><br>
+        <input class="w-80 h-16 bg-red-50 text-gray-500 rounded-xl p-6" type="text" value="Enter your phone number">
+        </form>
+      </div>
+       <form class="mt-8">
+    <label class="font-bold">Message</label><br>
+    <input class="w-80 h-80 bg-red-50 text-gray-500 rounded-xl p-4 " type="text" value="Write your message">
+    </form>
+ <button class="w-80 h-10 bg-red-500 text-white rounded-xl mt-8">Send Message</button></div>
 </section>
-    <footer>
-
+      <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded mt-8">
+        <nav class="grid grid-flow-col gap-4">
+          <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+            <header class="footer-title text-2xl text-gray-950">Social Media</header> 
+              <div class="grid grid-flow-col gap-4">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+              </div>
+            </nav> 
+          </footer>
+   
+    <footer class="footer p-10 bg-slate-950 text-base-content text-gray-500 mt-8">
+      <aside>
+        <h1 class="font-bold text-2xl text-gray-500">Get In Touch</h1>
+        <p class="text-gray-500">Feel free to reach out to us for anything from product inquiries, customer support,<br> partnership opportunities, or just to say hello. <br>We look forward to hearing from you and providing the best assistance possible!</p>
+        <div class="flex gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M21.75 6.75V17.25C21.75 17.8467 21.5129 18.419 21.091 18.841C20.669 19.2629 20.0967 19.5 19.5 19.5H4.5C3.90326 19.5 3.33097 19.2629 2.90901 18.841C2.48705 18.419 2.25 17.8467 2.25 17.25V6.75M21.75 6.75C21.75 6.15326 21.5129 5.58097 21.091 5.15901C20.669 4.73705 20.0967 4.5 19.5 4.5H4.5C3.90326 4.5 3.33097 4.73705 2.90901 5.15901C2.48705 5.58097 2.25 6.15326 2.25 6.75M21.75 6.75V6.993C21.75 7.37715 21.6517 7.75491 21.4644 8.0903C21.2771 8.42569 21.0071 8.70754 20.68 8.909L13.18 13.524C12.8252 13.7425 12.4167 13.8582 12 13.8582C11.5833 13.8582 11.1748 13.7425 10.82 13.524L3.32 8.91C2.99292 8.70854 2.72287 8.42669 2.53557 8.0913C2.34827 7.75591 2.24996 7.37815 2.25 6.994V6.75" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>hockeys@support.com
+        </div>
+        <div class="flex gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M2.25 6.75C2.25 15.034 8.966 21.75 17.25 21.75H19.5C20.0967 21.75 20.669 21.5129 21.091 21.091C21.5129 20.669 21.75 20.0967 21.75 19.5V18.128C21.75 17.612 21.399 17.162 20.898 17.037L16.475 15.931C16.035 15.821 15.573 15.986 15.302 16.348L14.332 17.641C14.05 18.017 13.563 18.183 13.122 18.021C11.4849 17.4191 9.99815 16.4686 8.76478 15.2352C7.53141 14.0018 6.58087 12.5151 5.979 10.878C5.817 10.437 5.983 9.95 6.359 9.668L7.652 8.698C8.015 8.427 8.179 7.964 8.069 7.525L6.963 3.102C6.90214 2.85869 6.76172 2.6427 6.56405 2.48834C6.36638 2.33397 6.1228 2.25008 5.872 2.25H4.5C3.90326 2.25 3.33097 2.48705 2.90901 2.90901C2.48705 3.33097 2.25 3.90326 2.25 4.5V6.75Z" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>(+62) 123-321-543
+        </div>
+      </aside> 
+  
+      <nav>
+        <header class="footer-title">Company</header> 
+        <a class="link link-hover">About Us</a>
+        <a class="link link-hover">leadership</a>
+        <a class="link link-hover">Career</a>
+        <a class="link link-hover">News & Article</a>
+        <a class="link link-hover">Legal Notice</a>
+      </nav> 
+      <nav>
+        <header class="footer-title">Support</header> 
+        <a class="link link-hover">Help Center</a>
+        <a class="link link-hover">FAQ</a>
+        <a class="link link-hover">ticket Support</a>
+        <a class="link link-hover">Contact Us</a>
+      </nav>
+      <nav>
+        <header class="footer-title">Services</header> 
+        <a class="link link-hover">Academy</a>
+        <a class="link link-hover">Group Lesson</a>
+        <a class="link link-hover">Private Lesson</a>
+        <a class="link link-hover">Hockey for kids</a>
+        <a class="link link-hover">Hockey for Adult</a>
+      </nav>
     </footer>
+   </footer>
 </body>
 </html>
